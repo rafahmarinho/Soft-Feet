@@ -945,6 +945,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  height: fit-content;
+}
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -1405,6 +1409,51 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #section-info-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .phone {
+    display: flex;
+  }
+ 
+  .phone h4 {
+    padding: 0 !important;
+  }
+
+  .phone p {
+    padding: 0 !important;
+  } */
+}
+
+#map-addres {
+  width: 100%;
+}
+
+.info-contact {
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
 .contact .info {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
@@ -1429,7 +1478,7 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
+  padding: 0 4rem;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -1437,7 +1486,7 @@ section {
 }
 
 .contact .info p {
-  padding: 0 0 10px 60px;
+  padding: 0 4rem;
   margin-bottom: 20px;
   font-size: 14px;
   color: #6182ba;
@@ -1850,6 +1899,7 @@ section {
 .card {
   margin: 1rem auto;
   height: max-content;
+  /* width: 100% !important; */
 }
 
 #card-img {
@@ -1872,7 +1922,7 @@ section {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2166,6 +2216,6 @@ section {
   align-items: center;
   margin-top: 1rem;
   border-radius: 50px;
-  width: 300px;
+  width: 100%;
   height: 50px;
 }
